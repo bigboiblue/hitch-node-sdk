@@ -1,0 +1,17 @@
+version: "3"
+# Hitch
+services:
+    hitch_sdk:
+        build:
+            context: .
+        entrypoint: /app/docker/container_startup.sh
+        volumes:
+            - ..:/app
+            - /app/docker
+            - ./container_startup.sh:/app/docker/container_startup.sh
+        ports:
+            - "8082:8082"
+            - "25586:25586"
+        stdin_open: true
+        tty: true
+        network_mode: host

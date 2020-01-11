@@ -1,0 +1,31 @@
+{
+  "name": "hitch-sdk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "test": "jest --watch --runInBand"
+  },
+  "author": "bigboiblue",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.1",
+    "eslint-plugin-import": "^2.18.2",
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/node": "^7.6.3",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-typescript": "^7.6.0",
+    "@types/node": "^12.12.5",
+    "@typescript-eslint/eslint-plugin": "^2.6.1",
+    "@typescript-eslint/parser": "^2.6.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "node-sass": "^4.13.0",
+    "typescript": "^3.7.4"
+  }
+}
