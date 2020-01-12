@@ -4,7 +4,7 @@ import { HitchInstance } from "./index";
 
 console.log("\n");
 
-async function test() {
+async function test(): Promise<void> {
     console.log("This is a test");
     const myApp = new HitchInstance("http://localhost", "MyApp");
     await myApp.ready();
@@ -13,7 +13,7 @@ async function test() {
     console.log(myApp.isEnabled("Im oLd grEg"));
 }
 
-test().then().catch();
+test();
 
 
 console.log("\n");
