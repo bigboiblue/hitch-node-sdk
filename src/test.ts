@@ -1,7 +1,6 @@
 //TODO: This is a temporary file, and will be removed in future versions
 
-import { HitchInstance } from "../index";
-// import { HitchInstance } from "hitch-sdk";
+// import { HitchInstance } from "../index";
 
 console.log("\n");
 

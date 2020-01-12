@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/HitchEmitter.ts"],"names":[],"mappings":";;;;;;;AAAA;;;;AAEe,MAAM,YAAN,SAA2B,eAA3B,CAAwC","file":"HitchEmitter.js","sourcesContent":["import EventEmitter from \"events\";\n\nexport default class HitchEmitter extends EventEmitter {}\n"]}
