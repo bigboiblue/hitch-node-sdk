@@ -2457,6 +2457,15 @@ has@^1.0.3:
   dependencies:
     function-bind "^1.1.1"
 
+hitch-sdk@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/hitch-sdk/-/hitch-sdk-0.1.0.tgz#42e4f865c7af49d7c0c50a17380eb7b5d0d772ed"
+  integrity sha512-lQkIImlB8VpOsDYasM9Hpm8k5zdZzwgyIPoRtUFJJYIGC2RdJjKedPfV4yzfLA01tAZLyFYnAhziUU0IdCCgjQ==
+  dependencies:
+    axios "^0.19.1"
+    eslint-plugin-import "^2.18.2"
+    gulp "^4.0.2"
+
 homedir-polyfill@^1.0.1:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/homedir-polyfill/-/homedir-polyfill-1.0.3.tgz#743298cef4e5af3e194161fbadcc2151d3a058e8"

@@ -1,8 +1,8 @@
 {
   "name": "hitch-sdk",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.1.0",
+  "description": "Hitch Node SDK",
+  "main": "./index.js",
   "scripts": {
     "start": "gulp",
     "test": "jest --watch --runInBand"
@@ -12,7 +12,12 @@
   "dependencies": {
     "axios": "^0.19.1",
     "eslint-plugin-import": "^2.18.2",
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "hitch-sdk": "^0.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/bigboiblue/hitch-node-sdk"
   },
   "devDependencies": {
     "@babel/cli": "^7.6.4",
