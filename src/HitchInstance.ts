@@ -5,7 +5,7 @@ import { FlagData } from "./FlagData";
 export default class HitchInstance {
     private flags: Map<string, Partial<FlagData>>;
     private flagKeys: string[];
-    private url: string;
+    private url: URL;
     private hitchEmitter: HitchEmitter;
 
     constructor(
@@ -16,14 +16,8 @@ export default class HitchInstance {
     ) {
         this.flagKeys = [];
 
-        this.url = url;
-        /** Remove '/' at the end if it exists */
-        if (this.url.substr(url.length - 1) === "/") {
-            this.url = this.url.substr(0, this.url.length - 1);
-        }
-
-        this.url = `${this.url}/api/v1/flags?groupName=${this.groupName}&isArchived=false`;
-
+        this.url = new URL(`/api/v1/flags?groupName=${this.groupName}&isArchived=false`, url);
+        this.url.port = "28191";
 
         this.hitchEmitter = new HitchEmitter();
 
@@ -31,7 +25,7 @@ export default class HitchInstance {
     }
 
     async fetchData(): Promise<void> {
-        const flags: FlagData[] = (await axios.get(this.url, { responseType: "json" })).data;
+        const flags: FlagData[] = (await axios.get(this.url.toString(), { responseType: "json" })).data;
 
         let flagNames = flags.map((value) => value.name);
         let tempMap: Map<string, Partial<FlagData>> = new Map();
